@@ -1,0 +1,237 @@
+.introduction-sec {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  top: 50px;
+}
+
+.description {
+  position: relative;
+  right: 50px;
+}
+
+.title {
+  position: relative;
+  bottom: 70px;
+  font-size: 50px;
+  font-weight: 700;
+  color: red;
+}
+
+.introduction {
+  position: relative;
+  bottom: 40px;
+  font-weight: 400;
+  color: red;
+}
+
+.social-icons {
+  width: fit-content;
+
+  i {
+    font-size: 35px;
+    color: rgb(128, 128, 128);
+    transition: all 0.4s ease;
+  }
+}
+
+.social-icons a:nth-child(1):hover i {
+  color: #3b82f6;
+  transform: translateY(-10px);
+}
+
+.social-icons a:nth-child(2):hover i {
+  color: #1d4ed8;
+  transform: translateY(-10px);
+}
+
+.social-icons a:nth-child(3):hover i {
+  color: #ef4444;
+  transform: translateY(-10px);
+}
+
+.main-image img {
+  width: 300px;
+  position: relative;
+  left: 75px;
+}
+
+/*animition for main title */
+
+.typing-effect {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid red;
+  animation: typingLoop 8s steps(20) infinite;
+}
+
+@keyframes typingLoop {
+  0% {
+    width: 0;
+  }
+
+  20% {
+    width: 100%;
+  }
+
+  40% {
+    width: 100%;
+  }
+
+  60% {
+    width: 0;
+  }
+
+  80% {
+    width: 0;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+.skills-sec {
+  position: relative;
+  top: 150px;
+}
+
+.my-skills {
+  text-align: center;
+  color: red;
+}
+
+.skill-container {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.skill-container img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.skill-overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background: rgba(23, 18, 18, 0.7);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  transition: bottom 0.3s ease;
+}
+
+.skill-container:hover .skill-overlay {
+  bottom: 0;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.projects-sec {
+  position: relative;
+  top: 450px;
+  height: 100vh;
+}
+
+.projects-title {
+    text-align: center;
+  color: red;
+  position: relative;
+  bottom: 10%;
+}
+
+.project-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  transition: bottom 0.4s ease;
+  height: 50%;
+}
+
+.project-wrapper:hover .overlay {
+  bottom: 0;
+}
+
+.project-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.technologies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.technologies span {
+  position: relative;
+  background-color: red;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(23%) sepia(91%) saturate(7486%) hue-rotate(356deg) brightness(99%) contrast(117%);
+}
+
+.carousel-indicators [data-bs-target] {
+  background-color: red;
+}
+
+.carousel-indicators .active {
+  background-color: darkred;
+}
+
+.footer {
+  background-color: #d32f2f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+      position: relative;
+    top: 600px;
+}
+
+.section-divider {
+  width: 75%;
+  height: 2px;
+  background-color: red;
+  margin: 50px auto;
+      position: relative;
+    top: 155px;
+}

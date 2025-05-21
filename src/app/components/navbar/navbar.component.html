@@ -1,0 +1,12 @@
+<nav
+  class="custom-nav d-flex justify-content-between align-items-center px-5 w-100 position-fixed top-0 bg-danger text-white"
+  [ngClass]="{'bg-danger': !isNavScrolled, 'bg-danger-subtle': isNavScrolled}"
+>
+
+  <i class="bx bx-qr-scan fs-3"></i>
+
+  <button class="theme-switch" (click)="toggleTheme()" [attr.aria-label]="isDarkMode ? 'Light Mode' : 'Dark Mode'">
+  <i [class]="isDarkMode ? 'bx bx-sun' : 'bx bx-moon'"></i>
+</button>
+
+</nav>

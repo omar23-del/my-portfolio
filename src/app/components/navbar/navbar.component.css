@@ -1,0 +1,26 @@
+.custom-nav {
+  height: 70px;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+.hover-red:hover {
+  color: #f87171;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.theme-switch {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: var(--text-color);
+  transition: transform 0.3s ease;
+}
+
+.theme-switch:hover {
+  transform: scale(1.2);
+}
