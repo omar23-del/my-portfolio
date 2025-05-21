@@ -50,6 +50,13 @@
   transform: translateY(-10px);
 }
 
+
+.social-icons a:nth-child(4):hover i {
+  color: black;
+  transform: translateY(-10px);
+}
+
+
 .main-image img {
   width: 300px;
   position: relative;
